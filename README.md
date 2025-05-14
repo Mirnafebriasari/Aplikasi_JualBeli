@@ -35,7 +35,8 @@ Aplikasi Penjualan Produk adalah program berbasis Java yang mengimplementasikan 
 ### D. Database
 1. Penyimpanan data produk dan transaksi secara permanen menggunakan **SQLite**.
 2. Otomatis membuat tabel `produk` dan `transaksi` saat aplikasi pertama kali dijalankan jika belum ada menggunakan file .db.
-
+   
+---
 ### query SQL (Structured Query Language)
 Query SQL (Structured Query Language) adalah perintah yang digunakan untuk berinteraksi dengan database, baik untuk membuat struktur database, memasukkan, mengambil, memperbarui, maupun menghapus data. 
 # jenis query SQL yang digunakan:
@@ -47,11 +48,13 @@ Query SQL (Structured Query Language) adalah perintah yang digunakan untuk berin
   3. DELETE FROM
 - DQL (Data Query Language)
   1. SELECT
+     
 ---
 
 ## Struktur Folder
+```
 AplikasiJualBeli/
-└── Source Packages/
+└── Source Packages/  
     ├── app/
     │   └── Main.java
     ├── gui/
@@ -67,7 +70,7 @@ AplikasiJualBeli/
     └── service/
         └── Database.java
 
-
+```
 ---
 ## Cara Menjalankan
   1. Pastikan Anda sudah menginstal **Java JDK** dan **NetBeans** (atau IDE lain seperti IntelliJ atau Eclipse).
@@ -81,15 +84,21 @@ AplikasiJualBeli/
 ## Pembagian Tugas Per Anggota
 
 - **FEMILIA PADAUNAN (H071241012)**  
-  Membuat kode class java yang mencakup 
+  Membuat kode class java yang mencakup
+  
   o Object & Class
+  
   o Attribute, Behavior & Constructor
+  
   o Encapsulation
+  
   o Inheritence
+  
   o Abstract & Interface
+  
   o Polymorphism
 
-- **MIRNA FEBRIASARI (H071241078)** 
+- **MIRNA FEBRIASARI (H071241078)**
   Mengembangkan kode kelas Java agar semua prinsip-prinsip OOP dapat terimplementasi dengan baik. Selain itu, bertanggung jawab dalam merancang dan mengimplementasikan struktur kelas utama aplikasi. Ia juga mengatur alur logika penambahan produk serta mengelola seluruh fitur yang berkaitan dengan peran Admin, termasuk penambahan stok, pembaruan data produk, dan penghapusan produk. Di samping itu, ia menangani manajemen penyimpanan data menggunakan SQLite untuk memastikan data produk dan transaksi tersimpan secara permanen den membuat file Database. ia juga mengamati ulang dan memastikan bahwa seluruh fitur dalam aplikasi berjalan lancar.
 
 - **NAYLA ZAKY FAUZIAH (H071241064)**   

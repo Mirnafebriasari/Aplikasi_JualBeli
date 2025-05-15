@@ -39,7 +39,7 @@ Aplikasi Penjualan Produk adalah program berbasis Java yang mengimplementasikan 
 ---
 ### query SQL (Structured Query Language)
 Query SQL (Structured Query Language) adalah perintah yang digunakan untuk berinteraksi dengan database, baik untuk membuat struktur database, memasukkan, mengambil, memperbarui, maupun menghapus data. 
-# jenis query SQL yang digunakan:
+### jenis query SQL yang digunakan:
 - DDL (Data Definition Language)
   1. CREATE TABLE
 - DML (Data Manipulation Language)
@@ -51,7 +51,7 @@ Query SQL (Structured Query Language) adalah perintah yang digunakan untuk berin
      
 ---
 
-## Struktur Folder
+### Struktur Folder
 ```
 AplikasiJualBeli/
 └── Source Packages/  
@@ -72,7 +72,7 @@ AplikasiJualBeli/
 
 ```
 ---
-## Cara Menjalankan
+### Cara Menjalankan
   1. Pastikan Anda sudah menginstal **Java JDK** dan **NetBeans** (atau IDE lain seperti IntelliJ atau Eclipse).
   2. git clone https://github.com/Mirnafebriasari/Aplikasi_JualBeli.git (di Command Prompt)
   3. Download ZIP (alternatif mudah) Klik tombol Code → pilih Download ZIP lalu Ekstrak file ZIP ke folder di komputer kamu
@@ -82,33 +82,27 @@ AplikasiJualBeli/
 ---
 
 
-## Pembagian Tugas Per Anggota
+### 📌 Pembagian Tugas Per Anggota
+👩‍💻 FEMILIA PADAUNAN (H071241012)
+Bertanggung jawab dalam membuat dan mengelola class Produk dan ProdukDiskon, yang merupakan inti dari pengelolaan data produk dalam aplikasi. Tugas ini mencakup perancangan atribut dan method untuk menyimpan data produk serta produk yang memiliki diskon, termasuk logika perhitungan harga akhir setelah diskon. Ia juga memastikan bahwa struktur class telah mengikuti prinsip-prinsip Object-Oriented Programming (OOP) dan dapat terintegrasi dengan lancar ke seluruh fitur aplikasi, khususnya dalam modul Admin dan Kasir.
 
-- **FEMILIA PADAUNAN (H071241012)**  
-  Membuat kode class java yang mencakup
-  
-  o Object & Class
-  
-  o Attribute, Behavior & Constructor
-  
-  o Encapsulation
-  
-  o Inheritence
-  
-  o Abstract & Interface
-  
-  o Polymorphism
+🗃️ MIRNA FEBRIASARI (H071241078)
 
-- **MIRNA FEBRIASARI (H071241078)**
-  Mengembangkan kode kelas Java agar semua prinsip-prinsip OOP dapat terimplementasi dengan baik. Selain itu, bertanggung jawab dalam merancang dan mengimplementasikan struktur kelas utama aplikasi. Ia juga mengatur alur logika penambahan produk serta mengelola seluruh fitur yang berkaitan dengan peran Admin, termasuk penambahan stok, pembaruan data produk, dan penghapusan produk. Di samping itu, ia menangani manajemen penyimpanan data menggunakan SQLite untuk memastikan data produk dan transaksi tersimpan secara permanen den membuat file Database. ia juga mengamati ulang dan memastikan bahwa seluruh fitur dalam aplikasi berjalan lancar.
+Bertanggung jawab penuh dalam pengelolaan penyimpanan data menggunakan SQLite. Ia membuat dan mengatur class Database.java, merancang struktur tabel produk dan transaksi, serta mengatur koneksi antar class dan database agar penyimpanan data bersifat permanen.
+Selain itu, Mirna menangani dokumentasi proyek di GitHub, seperti unggah proyek, struktur direktori, file .gitignore, dan README.md. Ia juga berperan dalam melakukan pengujian akhir seluruh fitur, memastikan tidak ada bug sebelum aplikasi dirilis.
 
-- **NAYLA ZAKY FAUZIAH (H071241064)**   
-  Menyusun dan mengimplementasikan fitur-fitur yang digunakan oleh Pimpinan, seperti pembuatan laporan transaksi bulanan, laporan pengeluaran, dan perhitungan total pendapatan.
+🖼️ NAYLA ZAKY FAUZIAH (H071241064)
 
-- **SITI NUR HALISA TAHIR (H071241086)**  
-  Menyusun dan mengimplementasikan fitur-fitur yang digunakan oleh Kasir, seperti penambahan transaksi penjualan, penghapusan aktivitas transaksi yang telah dilakukan, melihat riwayat hasil transaksi, serta pengurangan stok pada produk yang terjual sehingga stok produk diperbarui secara otomatis setelah transaksi selesai.
+Bertanggung jawab dalam merancang dan membangun antarmuka grafis (GUI) untuk peran Admin dan Kasir, menggunakan editor GUI berbasis drag-and-drop di NetBeans. Ia membuat file .java dan .form yang memuat elemen seperti tombol, form input, tabel, dan area aktivitas. Nayla memastikan bahwa tampilan antarmuka intuitif, responsif, dan sesuai alur penggunaan aplikasi, termasuk interaksi dengan database serta validasi data input.
 
-- **SYAHRANI ZAKIYAH NURFAIZAH (H071241042)**  
-  Mengurus dokumentasi proyek, termasuk penyusunan file `README.md`, serta memastikan bahwa semua fitur aplikasi terdokumentasi secara lengkap dan mudah dipahami oleh pengguna maupun pengembang lain.
----
+🔐 SITI NUR HALISA TAHIR (H071241086)
+
+Mengembangkan fitur untuk role Pimpinan dan Login, mencakup sistem autentikasi login pengguna berdasarkan peran, akses ke laporan transaksi dan pengeluaran bulanan, serta fitur perhitungan total pendapatan bersih. Ia juga menangani logika penambahan transaksi penjualan, penghapusan transaksi, dan pengurangan stok produk secara otomatis setelah transaksi berhasil. Semua fitur ini dikembangkan dengan memperhatikan konsistensi data dan validasi proses bisnis.
+
+🧾 SYAHRANI ZAKIYAH NURFAIZAH (H071241042)
+
+Bertanggung jawab atas pembuatan dan pengelolaan class ProdukInterface dan Transaksi. Ia menyusun kontrak interface untuk mengatur standar perilaku class produk, lalu mengimplementasikannya dalam class-class turunan. Syahrani juga membangun logika transaksi pembelian, termasuk pencatatan pembelian, perhitungan total harga, dan pengelolaan data transaksi yang terhubung dengan stok produk. Ia memastikan setiap proses transaksi berjalan sesuai prosedur aplikasi dan prinsip OOP.
+
+
+
 

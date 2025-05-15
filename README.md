@@ -10,6 +10,11 @@ Aplikasi Penjualan Produk adalah program berbasis Java yang mengimplementasikan 
 ### A. Login
 - Pengguna memilih untuk masuk sebagai **Admin**, **Kasir**, atau **Pimpinan**.
 - Setiap peran memiliki fitur berbeda.
+
+### 🧑‍💼 UI Kasir
+![UI Admin](assets/Screenshot%202025-05-12%20055651.png)
+
+
 ### B. Admin  (Kelola produk)
 1. Menambahkan Produk ke Database
    > Jika nama produk yang ditambahkan sudah ada, maka data produk tersebut akan di-update, bukan ditambahkan dua kali.
@@ -24,6 +29,8 @@ Aplikasi Penjualan Produk adalah program berbasis Java yang mengimplementasikan 
 4. Menyimpan Data Produk
    > Semua data produk disimpan secara permanen di dalam database SQLite.
 
+### 🧾 UI Admin
+![UI Kasir](assets/Screenshot%202025-05-12%20055714.png)
 
 
 ### C. Kasir (Lakukan dan kelola transaksi)
@@ -34,10 +41,17 @@ Aplikasi Penjualan Produk adalah program berbasis Java yang mengimplementasikan 
 4. Melihat aktivitas transaksi lengkap dengan tanggal dan jam.
 5. Menyimpan transaksi ke database permanen (SQLite).
 
+### 📦 UI Kasir
+![UI Produk](assets/Screenshot%202025-05-12%20055739.png)
+
 ### D. Pimpinan (Akses laporan dan analisis)
 1. Melihat laporan transaksi bulanan.
 2. Melihat laporan pengeluaran bulanan.
 3. Menghitung total pendapatan bersih dari penjualan.
+
+
+### 📊 UI Pimpinan
+![UI Laporan](assets/Screenshot%202025-05-12%20055758.png)
 
 ### - Database
 1. Penyimpanan data produk dan transaksi secara permanen menggunakan **SQLite**.

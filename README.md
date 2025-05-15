@@ -113,18 +113,19 @@ AplikasiJualBeli/
 
 ```
 ---
-### Cara Menjalankan
-  1. Pastikan Anda sudah menginstal **Java JDK** dan **NetBeans** (atau IDE lain seperti IntelliJ atau Eclipse).
-  2. git clone https://github.com/Mirnafebriasari/Aplikasi_JualBeli.git (di Command Prompt)
-  3. Download ZIP (alternatif mudah) Klik tombol Code → pilih Download ZIP lalu Ekstrak file ZIP ke folder di komputer kamu
-  4. Buka proyek di IDE, pastikan file `sqlite-jdbc.jar` sudah ditambahkan ke library proyek.
-  5. Jalankan `Main.java` dari IDE.
-  6. Program akan otomatis membuat file `database.db` di folder `resources/` jika belum tersedia.
+### 🚀 Cara Menjalankan Aplikasi
+1. Pastikan Anda telah menginstal Java JDK dan NetBeans (atau IDE lain seperti IntelliJ IDEA atau Eclipse).
+2. Clone repositori melalui Command Prompt: git clone https://github.com/Mirnafebriasari/Aplikasi_JualBeli.git
+3. Alternatif lain (lebih mudah): Klik tombol Code → Download ZIP, kemudian ekstrak file ZIP ke folder pilihan Anda.
+4. Buka proyek di IDE, lalu pastikan file sqlite-jdbc.jar telah ditambahkan ke library proyek (Libraries → Add JAR/Folder).
+5. Jalankan file Main.java dari IDE.
+6. Saat dijalankan pertama kali, program akan otomatis membuat file database.db di folder resources/ jika belum ada.
 ---
 
 
 ### 📌 Pembagian Tugas Per Anggota
 👩‍💻 FEMILIA PADAUNAN (H071241012)
+
 Bertanggung jawab dalam membuat dan mengelola class Produk dan ProdukDiskon, yang merupakan inti dari pengelolaan data produk dalam aplikasi. Tugas ini mencakup perancangan atribut dan method untuk menyimpan data produk serta produk yang memiliki diskon, termasuk logika perhitungan harga akhir setelah diskon. Ia juga memastikan bahwa struktur class telah mengikuti prinsip-prinsip Object-Oriented Programming (OOP) dan dapat terintegrasi dengan lancar ke seluruh fitur aplikasi, khususnya dalam modul Admin dan Kasir.
 
 🗃️ MIRNA FEBRIASARI (H071241078)

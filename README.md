@@ -74,7 +74,7 @@ AplikasiJualBeli/
 ---
 ## Cara Menjalankan
   1. Pastikan Anda sudah menginstal **Java JDK** dan **NetBeans** (atau IDE lain seperti IntelliJ atau Eclipse).
-  2. Clone atau salin seluruh proyek ini ke komputer lokal Anda.
+  2. Clone https://github.com/Mirnafebriasari/Aplikasi_JualBeli.git di cmd
   3. Buka proyek di IDE, pastikan file `sqlite-jdbc.jar` sudah ditambahkan ke library proyek.
   4. Jalankan `Main.java` dari IDE.
   5. Program akan otomatis membuat file `database.db` di folder `resources/` jika belum tersedia.

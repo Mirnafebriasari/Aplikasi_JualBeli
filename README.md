@@ -11,7 +11,7 @@ Aplikasi Penjualan Produk adalah program berbasis Java yang mengimplementasikan 
 - Pengguna memilih untuk masuk sebagai **Admin**, **Kasir**, atau **Pimpinan**.
 - Setiap peran memiliki fitur berbeda.
 
-### 🧑‍💼 UI Kasir
+### 🧑‍💼 UI Login
 ![UI Admin](assets/Screenshot%202025-05-12%20055651.png)
 
 

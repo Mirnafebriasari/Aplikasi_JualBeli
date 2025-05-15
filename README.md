@@ -1,11 +1,11 @@
  # Aplikasi Penjualan Produk
 
-## Deskripsi Singkat
+### Deskripsi Singkat
 Aplikasi Penjualan Produk adalah program berbasis Java yang mengimplementasikan konsep **Object-Oriented Programming (OOP)** dan menggunakan **SQLite** untuk penyimpanan data permanen. Aplikasi ini adalah sistem yang memfasilitasi proses transaksi antara penjual dan pembeli melalui platform digital. Aplikasi ini menyediakan berbagai fitur untuk mengelola barang yang dijual, melakukan transaksi pembelian, serta menyediakan laporan penjualan. Aplikasi ini terdiri dari tiga peran utama: **Admin**, **Kasir**, dan **Pimpinan**, yang masing-masing memiliki akses dan fitur berbeda sesuai fungsinya.
 
 ---
 
-## Fitur Utama
+### Fitur Utama
 
 ### Login
 - Pengguna memilih untuk masuk sebagai **Admin**, **Kasir**, atau **Pimpinan**.

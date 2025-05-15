@@ -39,15 +39,55 @@ Aplikasi Penjualan Produk adalah program berbasis Java yang mengimplementasikan 
 ---
 ### query SQL (Structured Query Language)
 Query SQL (Structured Query Language) adalah perintah yang digunakan untuk berinteraksi dengan database, baik untuk membuat struktur database, memasukkan, mengambil, memperbarui, maupun menghapus data. 
-### jenis query SQL yang digunakan:
-- DDL (Data Definition Language)
-  1. CREATE TABLE
-- DML (Data Manipulation Language)
-  1. INSERT INTO
-  2. UPDATE
-  3. DELETE FROM
-- DQL (Data Query Language)
-  1. SELECT
+
+### ✅ Jenis Query SQL yang Digunakan
+🔷 DDL (Data Definition Language)
+- Digunakan untuk mendefinisikan struktur tabel dalam database.
+1. CREATE TABLE – Membuat tabel produk dan transaksi.
+
+🔷 DML (Data Manipulation Language)
+- Digunakan untuk manipulasi data dalam tabel.
+1. INSERT INTO – Menambahkan data ke tabel produk dan transaksi.
+2. UPDATE – Memperbarui data produk jika nama produk sudah ada.
+3. DELETE FROM – Menghapus produk atau transaksi berdasarkan kondisi tertentu.
+
+🔷 DQL (Data Query Language)
+- Digunakan untuk mengambil data dari database.
+1. SELECT – Menampilkan data produk, transaksi, dan laporan keuangan.
+
+
+🗃️ Struktur Tabel dalam Kode
+
+private static void createTablesIfNotExist() {
+    String createProduk = """
+    CREATE TABLE IF NOT EXISTS produk (
+        nama TEXT PRIMARY KEY,
+        harga REAL NOT NULL,
+        stok INTEGER NOT NULL,
+        diskon REAL DEFAULT 0,
+        tanggal TEXT,
+        hargaBeli REAL
+    );
+    """;
+
+    String createTransaksi = """
+    CREATE TABLE IF NOT EXISTS transaksi (
+        id_produk TEXT NOT NULL,
+        jumlah INTEGER NOT NULL,
+        total_harga REAL NOT NULL,
+        tanggal TEXT,
+        FOREIGN KEY(id_produk) REFERENCES produk(nama)
+    );
+    """;
+}
+
+
+Penjelasan:
+
+Tabel produk menyimpan informasi produk seperti nama, harga, stok, diskon, tanggal aktivitas, dan harga beli.
+
+Tabel transaksi mencatat transaksi penjualan, termasuk produk terkait, jumlah yang dibeli, total harga, dan tanggal transaksi.
+
      
 ---
 

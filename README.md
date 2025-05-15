@@ -56,8 +56,9 @@ Query SQL (Structured Query Language) adalah perintah yang digunakan untuk berin
 1. SELECT – Menampilkan data produk, transaksi, dan laporan keuangan.
 
 
-🗃️ Struktur Tabel dalam Kode
+### 🗃️ Struktur Tabel dalam Kode
 
+```java
 private static void createTablesIfNotExist() {
     String createProduk = """
     CREATE TABLE IF NOT EXISTS produk (
@@ -81,12 +82,12 @@ private static void createTablesIfNotExist() {
     """;
 }
 
+```
+
 
 Penjelasan:
-
-Tabel produk menyimpan informasi produk seperti nama, harga, stok, diskon, tanggal aktivitas, dan harga beli.
-
-Tabel transaksi mencatat transaksi penjualan, termasuk produk terkait, jumlah yang dibeli, total harga, dan tanggal transaksi.
+1. Tabel produk menyimpan informasi produk seperti nama, harga, stok, diskon, tanggal aktivitas, dan harga beli.
+2. Tabel transaksi mencatat transaksi penjualan, termasuk produk terkait, jumlah yang dibeli, total harga, dan tanggal transaksi.
 
      
 ---
@@ -94,7 +95,7 @@ Tabel transaksi mencatat transaksi penjualan, termasuk produk terkait, jumlah ya
 ### Struktur Folder
 ```
 AplikasiJualBeli/
-└── Source Packages/  
+└── src/  
     ├── app/
     │   └── Main.java
     ├── gui/

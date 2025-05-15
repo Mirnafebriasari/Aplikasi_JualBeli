@@ -1,0 +1,29 @@
+# Folder hasil build dan output
+build/
+dist/
+bin/
+
+# File hasil kompilasi
+*.class
+
+# Folder konfigurasi pribadi NetBeans
+nbproject/private/
+
+# File database lokal
+resources/database.db
+
+# File log, backup, dan sementara
+*.log
+*.tmp
+*.bak
+*.orig
+*.rej
+
+# File IDE lain
+.idea/
+*.iml
+.vscode/
+
+# File sistem OS
+.DS_Store
+Thumbs.db

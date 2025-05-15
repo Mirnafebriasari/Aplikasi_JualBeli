@@ -7,10 +7,10 @@ Aplikasi Penjualan Produk adalah program berbasis Java yang mengimplementasikan 
 
 ### Fitur Utama
 
-### Login
+### A. Login
 - Pengguna memilih untuk masuk sebagai **Admin**, **Kasir**, atau **Pimpinan**.
 - Setiap peran memiliki hak akses dan fitur berbeda.
-### A. Admin  (Kelola produk)
+### B. Admin  (Kelola produk)
 1. Menambahkan produk ke database  
    > Jika nama produk yang ditambahkan sudah ada, maka data akan di-*update* (bukan ditambah dua kali).
 2. Mengatur nama produk, diskon, harga beli, dan harga jual.
@@ -19,7 +19,7 @@ Aplikasi Penjualan Produk adalah program berbasis Java yang mengimplementasikan 
 4. Melihat produk lengkap dengan tanggal dan jam aktivitas.
 5. Menyimpan data produk ke database permanen (SQLite).
 
-### B. Kasir (Lakukan dan kelola transaksi)
+### C. Kasir (Lakukan dan kelola transaksi)
 1. Melakukan transaksi penjualan.
 2. Mengurangi stok produk secara otomatis setelah transaksi berhasil.
 3. Menghapus transaksi  
@@ -27,12 +27,12 @@ Aplikasi Penjualan Produk adalah program berbasis Java yang mengimplementasikan 
 4. Melihat aktivitas transaksi lengkap dengan tanggal dan jam.
 5. Menyimpan transaksi ke database permanen (SQLite).
 
-### C. Pimpinan (Akses laporan dan analisis)
+### D. Pimpinan (Akses laporan dan analisis)
 1. Melihat laporan transaksi bulanan.
 2. Melihat laporan pengeluaran bulanan.
 3. Menghitung total pendapatan bersih dari penjualan.
 
-### D. Database
+### - Database
 1. Penyimpanan data produk dan transaksi secara permanen menggunakan **SQLite**.
 2. Otomatis membuat tabel `produk` dan `transaksi` saat aplikasi pertama kali dijalankan jika belum ada menggunakan file .db.
    

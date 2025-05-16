@@ -133,6 +133,94 @@ Aplikasi_JualBeli/
         └── Database.java
 
 ```
+## 🧩 Struktur Class
+
+Proyek ini menggunakan pendekatan **Pemrograman Berorientasi Objek (OOP)** dan dibagi dalam beberapa package berikut:
+
+### 📁 app
+
+- **Main**
+  - Fungsi: Entry point program.
+  - Menjalankan `LoginFrame` sebagai tampilan awal aplikasi.
+
+
+### 📁 gui
+
+Komponen GUI menggunakan Java Swing untuk tiap peran pengguna:
+
+- **LoginFrame**
+  - Menyediakan antarmuka login.
+  - Menentukan role: Admin, Kasir, atau Pimpinan.
+
+- **AdminFrame**
+  - Tampilan untuk Admin.
+  - Fitur: Menambah, mengedit, dan menghapus produk.
+
+- **KasirFrame**
+  - Tampilan untuk Kasir.
+  - Fitur: Menampilkan daftar produk dan melakukan transaksi penjualan.
+
+- **PimpinanFrame**
+  - Tampilan untuk Pimpinan toko.
+  - Fitur: Melihat laporan penjualan dan data produk.
+
+
+### 📁 model
+
+Berisi representasi objek utama dalam aplikasi:
+
+- **Produk**
+  - Atribut: `id`, `nama`, `harga`, `stok`.
+  - Metode: `getHarga()`, `getStok()`, dll.
+  - Constructor digunakan untuk inisialisasi objek.
+
+- **ProdukDiskon** *(extends Produk)*
+  - Menambahkan atribut `diskon`.
+  - Override metode `getHarga()` untuk perhitungan diskon berdasarkan nilai diskon.
+
+- **ProdukInterface**
+  - Interface untuk mendefinisikan metode umum seperti `getNama()`, `getHarga()`, dll.
+  - Digunakan untuk menyatukan kontrak antar class produk.
+
+- **Transaksi**
+  - Mewakili satu transaksi penjualan.
+  - Atribut: daftar produk yang dibeli, total harga, dan waktu transaksi.
+  - Menyediakan metode untuk menghitung total dan mencetak informasi transaksi.
+
+
+### 📁 service
+
+- **Database**
+  - Bertindak sebagai penyimpanan data (produk dan transaksi).
+  - Menyediakan metode: `addProduk()`, `getProduk()`, `addTransaksi()`, dll.
+  - Mendukung koneksi ke SQLite sebagai penyimpanan permanen.
+
+---
+
+## 🎯 Penerapan Prinsip OOP
+
+Struktur ini memenuhi prinsip-prinsip dasar OOP, yaitu:
+
+- **Object & Class**  
+  Setiap fitur direpresentasikan sebagai class dan digunakan melalui object, seperti `Produk`, `Transaksi`, dan berbagai Frame GUI.
+
+- **Attribute, Behavior & Constructor**  
+  Setiap class memiliki atribut (data), perilaku (method), dan constructor untuk inisialisasi objek, misalnya class `Produk` memiliki atribut `nama`, `harga`, dan method `getHarga()`.
+
+- **Encapsulation**  
+  Atribut dibuat private dan diakses melalui getter/setter untuk menjaga integritas data.
+
+- **Inheritance**  
+  Class `ProdukDiskon` mewarisi `Produk` dan memperluas fungsionalitasnya dengan menambahkan diskon.
+
+- **Abstraction & Interface**  
+  Interface `ProdukInterface` digunakan untuk mendefinisikan metode yang harus dimiliki oleh semua produk, tanpa mengetahui implementasinya secara spesifik.
+
+- **Polymorphism**  
+  Objek bertipe `Produk` bisa berupa `Produk` atau `ProdukDiskon`, dan method seperti `getHarga()` akan berjalan sesuai class aslinya (overriding).
+
+
+
 ---
 ### 🚀 Cara Menjalankan Aplikasi
 1. Pastikan Anda telah menginstal Java JDK dan NetBeans (atau IDE lain seperti IntelliJ IDEA atau Eclipse).
